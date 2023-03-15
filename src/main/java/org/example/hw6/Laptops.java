@@ -70,7 +70,7 @@ public class Laptops {
 //        filterList.add(laptopFilterParam);
 
 
-        for (Laptop i : laptops) {
+        for (Laptop i : this.laptops) {
             if (laptopFilterParam.isEquals(i)) {
                 if (minPrice != 0 || maxPrice != 9999999.9) {
                     if (i.getPrice() >= minPrice && i.getPrice() <= maxPrice) {
@@ -120,8 +120,6 @@ public class Laptops {
         System.out.printf("%8s %5s %5s %5s %5s %5s %8s\n", "Название", "Цвет", "CPU", "МГц", "ОЗУ", "HDD", "Цена");
         for (Laptop l : list) {
             l.print();
-//            System.out.printf("%-8s %-5s %-5s %5s %5s %5s %8s\n", l.getName(), l.getColor(), l.getCpu_name(),
-//                    l.getCpu_frequency(), l.getRam_size(), l.getHdd_size(), l.getPrice());
         }
     }
 }

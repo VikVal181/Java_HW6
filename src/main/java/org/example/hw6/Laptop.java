@@ -23,11 +23,11 @@ public class Laptop {
             return false;
         } else if (this.cpu_name.length() != 0 && !this.cpu_name.toLowerCase().equals(other.cpu_name.toLowerCase())) {
             return false;
-        } else if (this.cpu_frequency != 0.0 && !this.cpu_frequency.equals(other.cpu_frequency)) {
+        } else if (this.cpu_frequency != 0.0 && this.cpu_frequency > other.cpu_frequency) {
             return false;
-        } else if (this.ram_size != 0 && !this.ram_size.equals(other.ram_size)) {
+        } else if (this.ram_size != 0 && this.ram_size > other.ram_size) {
             return false;
-        } else if (this.hdd_size != 0 && !this.hdd_size.equals(other.hdd_size)) {
+        } else if (this.hdd_size != 0 && this.hdd_size > other.hdd_size) {
             return false;
         }
         else return true;

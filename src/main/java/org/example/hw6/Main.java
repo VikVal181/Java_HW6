@@ -34,7 +34,7 @@ public class Main {
         while (!comand.equals("q")) {
             Scanner input = new Scanner(System.in);
             System.out.println("Введите один или несколько параметров по которым необходимо отфильтровать ноутбуки");
-//
+
             for (Map.Entry<Integer, String> item : search.entrySet()) {
                 System.out.println(item.getKey() + " - " + item.getValue());
             }
